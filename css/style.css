@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Rubik+Moonrocks&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.4s ease;
+    font-family:  'Open Sans', sans-serif;  
+}
+header{
+    width: 100%;
+    height: 100vh;
+    background: #08101D;
+}
+nav{
+    width: 100%;
+    height: 100px;
+    background-color:#0A121F;
+}
+nav .container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+nav .container ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav .container ul li{
+    margin: 0 10px;
+    list-style: none;
+}
+nav .container ul li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+nav .container ul li a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    bottom: -5px;
+    transition: all 0.5s ease;
+}
+nav .container ul li a:hover::before {
+    width: 100%;
+}
+nav .container ul li a  button{
+    padding: 8px 18px ;
+    background: #3A68B8;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+button{
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #3A68B8;
+}
+button:active{
+    transform: translateX(-5px);
+}
+
